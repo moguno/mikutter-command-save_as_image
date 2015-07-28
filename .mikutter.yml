@@ -7,6 +7,6 @@ depends:
   - gtk
   - settings
 version: '0.0.1'
-author: 
+author: moguno
 name: mikutter-command-save_as_image
 description: 選択したメッセージを画像として保存します。
