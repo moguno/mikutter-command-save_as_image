@@ -1,0 +1,12 @@
+---
+slug: :mikutter-command-save_as_image
+depends:
+  mikutter: 3.2.0
+  plugin:
+  - command
+  - gtk
+  - settings
+version: '0.0.1'
+author: moguno
+name: mikutter-command-save_as_image
+description: 選択したメッセージを画像として保存します。
