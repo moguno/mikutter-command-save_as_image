@@ -1,6 +1,8 @@
 #coding: utf-8
 
 Plugin.create(:"mikutter-command-sava_as_image") {
+  require File.join(File.dirname(__FILE__), "dirselect.rb")
+
   UserConfig[:save_as_image_folder] ||= Dir.home
 
   # コマンド
@@ -44,6 +46,7 @@ Plugin.create(:"mikutter-command-sava_as_image") {
 
   # 設定
   settings(_("画像として保存")) {
-    input("保存フォルダ", :save_as_image_folder)
+    # input("保存フォルダ", :save_as_image_folder)
+    dirselect("保存フォルダ", :save_as_image_folder, UserConfig[:save_as_image_folder])
   }
 }
